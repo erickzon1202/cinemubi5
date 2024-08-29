@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+}
+header {
+    background-color: #00bbbb;
+}
+main {
+    background-color: #7800e8;
+}
+aside {
+    background-color: rgba(190, 82, 5, 0.5);
+}
+footer {
+    background-color: #510000;
+}
+
+/* Diseño responsivo con media queries, movil */
+@media (max-width: 600px) {
+    /* body {
+      background: rgb(247, 1, 185);
+    } */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+    }
+  }
+
+/* Diseño responsivo con media queries, tablet para arriba */
+@media (min-width: 600px) {
+    /* body {
+      background: #008000;
+    } */
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "principal principal lado"
+        "pie pie pie"
+        ;
+    }
+    header {
+        grid-area: cabeza;
+    }
+    main {
+        grid-area: principal;
+    }
+    aside {
+        grid-area: lado;
+    }
+    footer {
+        grid-area: pie;
+    }
+  }
+  h1,p {
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.borde {
+border-radius: 8px 8px 8px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
